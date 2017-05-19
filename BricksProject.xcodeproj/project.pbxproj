@@ -7,19 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21443F41EC779FA00154226 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21443F21EC779FA00154226 /* ImageCell.swift */; };
+		F21443F51EC779FA00154226 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21443F31EC779FA00154226 /* ImageCell.xib */; };
+		F25BE1711ECB5C2D00CACEF5 /* ViewBricksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BE1701ECB5C2D00CACEF5 /* ViewBricksVC.swift */; };
+		F264CFB41EC85F6800D37F57 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB31EC85F6800D37F57 /* AddressVC.swift */; };
+		F264CFB61EC85F7600D37F57 /* CreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */; };
+		F264CFB91EC894C700D37F57 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB81EC894C700D37F57 /* Order.swift */; };
+		F27008D61EC7169A00C5FC49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27008D51EC7169A00C5FC49 /* Constants.swift */; };
+		F27008D91EC71ACC00C5FC49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27008D81EC71ACC00C5FC49 /* Extensions.swift */; };
+		F2A0DD221EC798A1009974D8 /* CustomPushUpTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0DD211EC798A1009974D8 /* CustomPushUpTransition.swift */; };
+		F2A0DD241EC799F9009974D8 /* InstagramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0DD231EC799F9009974D8 /* InstagramVC.swift */; };
+		F2A0DD261EC79BCC009974D8 /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0DD251EC79BCC009974D8 /* OrderDetailsVC.swift */; };
 		F2C351CD1EC676AB0062E855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C351CC1EC676AB0062E855 /* AppDelegate.swift */; };
 		F2C351D21EC676AB0062E855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C351D01EC676AB0062E855 /* Main.storyboard */; };
 		F2C351D41EC676AB0062E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C351D31EC676AB0062E855 /* Assets.xcassets */; };
 		F2C351D71EC676AB0062E855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C351D51EC676AB0062E855 /* LaunchScreen.storyboard */; };
+		F2C351DF1EC677150062E855 /* ChooseBricksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C351DE1EC677150062E855 /* ChooseBricksVC.swift */; };
+		F2C351E91EC67CF90062E855 /* CameraRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C351E81EC67CF90062E855 /* CameraRollVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21443F21EC779FA00154226 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F21443F31EC779FA00154226 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		F25BE1701ECB5C2D00CACEF5 /* ViewBricksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBricksVC.swift; sourceTree = "<group>"; };
+		F264CFB31EC85F6800D37F57 /* AddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
+		F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardVC.swift; sourceTree = "<group>"; };
+		F264CFB81EC894C700D37F57 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		F27008D51EC7169A00C5FC49 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F27008D81EC71ACC00C5FC49 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F2A0DD211EC798A1009974D8 /* CustomPushUpTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPushUpTransition.swift; sourceTree = "<group>"; };
+		F2A0DD231EC799F9009974D8 /* InstagramVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramVC.swift; sourceTree = "<group>"; };
+		F2A0DD251EC79BCC009974D8 /* OrderDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
 		F2C351C91EC676AB0062E855 /* BricksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BricksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C351CC1EC676AB0062E855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C351D11EC676AB0062E855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2C351D31EC676AB0062E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2C351D61EC676AB0062E855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C351D81EC676AB0062E855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C351DE1EC677150062E855 /* ChooseBricksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBricksVC.swift; sourceTree = "<group>"; };
+		F2C351E81EC67CF90062E855 /* CameraRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraRollVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +59,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F264CFB71EC8944600D37F57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F264CFB81EC894C700D37F57 /* Order.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F27008D01EC7129400C5FC49 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2C351CC1EC676AB0062E855 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F27008D11EC712A000C5FC49 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2C351DE1EC677150062E855 /* ChooseBricksVC.swift */,
+				F25BE1701ECB5C2D00CACEF5 /* ViewBricksVC.swift */,
+				F2C351E81EC67CF90062E855 /* CameraRollVC.swift */,
+				F2A0DD231EC799F9009974D8 /* InstagramVC.swift */,
+				F2A0DD251EC79BCC009974D8 /* OrderDetailsVC.swift */,
+				F264CFB31EC85F6800D37F57 /* AddressVC.swift */,
+				F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F27008D21EC712AD00C5FC49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F21443F21EC779FA00154226 /* ImageCell.swift */,
+				F21443F31EC779FA00154226 /* ImageCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F27008D31EC712B700C5FC49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F2C351D01EC676AB0062E855 /* Main.storyboard */,
+				F2C351D51EC676AB0062E855 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F27008D41EC712C200C5FC49 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F27008D51EC7169A00C5FC49 /* Constants.swift */,
+				F27008D81EC71ACC00C5FC49 /* Extensions.swift */,
+				F2C351D31EC676AB0062E855 /* Assets.xcassets */,
+				F2C351D81EC676AB0062E855 /* Info.plist */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		F2A0DD201EC79854009974D8 /* Custom Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				F2A0DD211EC798A1009974D8 /* CustomPushUpTransition.swift */,
+			);
+			name = "Custom Transitions";
+			sourceTree = "<group>";
+		};
 		F2C351C01EC676AB0062E855 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +145,13 @@
 		F2C351CB1EC676AB0062E855 /* BricksProject */ = {
 			isa = PBXGroup;
 			children = (
-				F2C351CC1EC676AB0062E855 /* AppDelegate.swift */,
-				F2C351D01EC676AB0062E855 /* Main.storyboard */,
-				F2C351D31EC676AB0062E855 /* Assets.xcassets */,
-				F2C351D51EC676AB0062E855 /* LaunchScreen.storyboard */,
-				F2C351D81EC676AB0062E855 /* Info.plist */,
+				F27008D01EC7129400C5FC49 /* App */,
+				F27008D31EC712B700C5FC49 /* Storyboards */,
+				F27008D11EC712A000C5FC49 /* View Controllers */,
+				F27008D21EC712AD00C5FC49 /* Views */,
+				F264CFB71EC8944600D37F57 /* Models */,
+				F2A0DD201EC79854009974D8 /* Custom Transitions */,
+				F27008D41EC712C200C5FC49 /* Ressources */,
 			);
 			path = BricksProject;
 			sourceTree = "<group>";
@@ -122,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C351D71EC676AB0062E855 /* LaunchScreen.storyboard in Resources */,
+				F21443F51EC779FA00154226 /* ImageCell.xib in Resources */,
 				F2C351D41EC676AB0062E855 /* Assets.xcassets in Resources */,
 				F2C351D21EC676AB0062E855 /* Main.storyboard in Resources */,
 			);
@@ -134,7 +230,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C351E91EC67CF90062E855 /* CameraRollVC.swift in Sources */,
+				F27008D91EC71ACC00C5FC49 /* Extensions.swift in Sources */,
 				F2C351CD1EC676AB0062E855 /* AppDelegate.swift in Sources */,
+				F25BE1711ECB5C2D00CACEF5 /* ViewBricksVC.swift in Sources */,
+				F264CFB61EC85F7600D37F57 /* CreditCardVC.swift in Sources */,
+				F2A0DD261EC79BCC009974D8 /* OrderDetailsVC.swift in Sources */,
+				F2A0DD221EC798A1009974D8 /* CustomPushUpTransition.swift in Sources */,
+				F264CFB91EC894C700D37F57 /* Order.swift in Sources */,
+				F2A0DD241EC799F9009974D8 /* InstagramVC.swift in Sources */,
+				F27008D61EC7169A00C5FC49 /* Constants.swift in Sources */,
+				F264CFB41EC85F6800D37F57 /* AddressVC.swift in Sources */,
+				F2C351DF1EC677150062E855 /* ChooseBricksVC.swift in Sources */,
+				F21443F41EC779FA00154226 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +406,7 @@
 				F2C351DD1EC676AB0062E855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

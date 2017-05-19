@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="gTV-IL-0wX" customClass="ImageCell" customModule="BricksProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gb1-5m-feO">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-wS-EqS" userLabel="Overlay">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aJz-JJ-dhn">
+                                <rect key="frame" x="0.0" y="100" width="100" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="eBt-IJ-kOg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aJz-JJ-dhn" secondAttribute="bottom" constant="-8" id="LWR-ea-5BN"/>
+                            <constraint firstAttribute="trailing" secondItem="aJz-JJ-dhn" secondAttribute="trailing" id="Mdg-qf-wWF"/>
+                            <constraint firstItem="aJz-JJ-dhn" firstAttribute="leading" secondItem="xkF-wS-EqS" secondAttribute="leading" id="tbO-Kj-2La"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected-black-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cj1-2K-1xt">
+                        <rect key="frame" x="40" y="40" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Cj1-2K-1xt" secondAttribute="height" multiplier="1:1" id="MoV-um-Z57"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.64662887828918902" green="0.88593431154547908" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cj1-2K-1xt" firstAttribute="centerX" secondItem="xkF-wS-EqS" secondAttribute="centerX" id="9C2-lz-Uol"/>
+                <constraint firstItem="xkF-wS-EqS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CAx-ox-GNV"/>
+                <constraint firstItem="Gb1-5m-feO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I7b-jH-3Et"/>
+                <constraint firstItem="Cj1-2K-1xt" firstAttribute="centerY" secondItem="xkF-wS-EqS" secondAttribute="centerY" id="KZD-IO-AL3"/>
+                <constraint firstAttribute="trailing" secondItem="Gb1-5m-feO" secondAttribute="trailing" id="Mnr-CW-7CE"/>
+                <constraint firstAttribute="bottom" secondItem="Gb1-5m-feO" secondAttribute="bottom" id="QYh-sb-gUv"/>
+                <constraint firstItem="Gb1-5m-feO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="R2T-7H-8uh"/>
+                <constraint firstItem="xkF-wS-EqS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TZb-bt-MsZ"/>
+                <constraint firstAttribute="trailing" secondItem="xkF-wS-EqS" secondAttribute="trailing" id="qEd-eU-cxg"/>
+                <constraint firstAttribute="bottom" secondItem="xkF-wS-EqS" secondAttribute="bottom" id="xaQ-B2-VvV"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="Gb1-5m-feO" id="gWO-Gk-fj5"/>
+                <outlet property="markedView" destination="Cj1-2K-1xt" id="iKF-l6-54o"/>
+                <outlet property="overlayView" destination="xkF-wS-EqS" id="GBf-zh-SOE"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selected-black-icon" width="20" height="20"/>
+    </resources>
+</document>
