@@ -26,6 +26,7 @@ struct Storyboard {
 //        static let viewBricks_purchaseBricks = "ViewBricks-PurchaseBricks"
         static let orderDetails_address = "OrderDetails-Address"
         static let orderDetails_creditCard = "OrderDetails-CreditCard"
+        static let orderDetails_imageCrop = "OrderDetails-ImageCrop"
     }
     
 }

@@ -24,6 +24,7 @@
 		F2C351D71EC676AB0062E855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C351D51EC676AB0062E855 /* LaunchScreen.storyboard */; };
 		F2C351DF1EC677150062E855 /* ChooseBricksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C351DE1EC677150062E855 /* ChooseBricksVC.swift */; };
 		F2C351E91EC67CF90062E855 /* CameraRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C351E81EC67CF90062E855 /* CameraRollVC.swift */; };
+		F2FD03351ECED267000AD62A /* ImageCropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD03341ECED267000AD62A /* ImageCropVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F2C351D81EC676AB0062E855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C351DE1EC677150062E855 /* ChooseBricksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBricksVC.swift; sourceTree = "<group>"; };
 		F2C351E81EC67CF90062E855 /* CameraRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraRollVC.swift; sourceTree = "<group>"; };
+		F2FD03341ECED267000AD62A /* ImageCropVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F2A0DD251EC79BCC009974D8 /* OrderDetailsVC.swift */,
 				F264CFB31EC85F6800D37F57 /* AddressVC.swift */,
 				F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */,
+				F2FD03341ECED267000AD62A /* ImageCropVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FD03351ECED267000AD62A /* ImageCropVC.swift in Sources */,
 				F2C351E91EC67CF90062E855 /* CameraRollVC.swift in Sources */,
 				F27008D91EC71ACC00C5FC49 /* Extensions.swift in Sources */,
 				F2C351CD1EC676AB0062E855 /* AppDelegate.swift in Sources */,

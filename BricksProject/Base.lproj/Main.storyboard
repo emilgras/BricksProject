@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -613,11 +614,80 @@
                         <outlet property="priceLabel" destination="8DQ-0A-seR" id="HPc-Mo-giV"/>
                         <segue destination="y9E-5u-SfC" kind="presentation" identifier="OrderDetails-Address" id="Dun-Y3-2vs"/>
                         <segue destination="sJa-BD-zTr" kind="presentation" identifier="OrderDetails-CreditCard" id="GRc-NS-kxu"/>
+                        <segue destination="JFe-4e-dcs" kind="show" identifier="OrderDetails-ImageCrop" id="dZj-tG-kAc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0H3-4s-VTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2598" y="189"/>
+        </scene>
+        <!--Image CropVC-->
+        <scene sceneID="N1w-I5-bVF">
+            <objects>
+                <viewController id="JFe-4e-dcs" customClass="ImageCropVC" customModule="BricksProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l6f-rK-vKP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q47-8w-wGS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pAQ-r5-hs6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8d-dU-x8H">
+                                <rect key="frame" x="0.0" y="100" width="600" height="600"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-10-ztU">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rgr-10-ztU" secondAttribute="trailing" id="FcP-7e-raG"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="width" secondItem="j8d-dU-x8H" secondAttribute="width" id="h4v-XV-HIV"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="height" secondItem="j8d-dU-x8H" secondAttribute="height" id="q80-s0-hhO"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="top" secondItem="j8d-dU-x8H" secondAttribute="top" id="qp5-Md-F4r"/>
+                                    <constraint firstAttribute="width" secondItem="j8d-dU-x8H" secondAttribute="height" multiplier="1:1" id="r8B-nv-BBd"/>
+                                    <constraint firstAttribute="bottom" secondItem="rgr-10-ztU" secondAttribute="bottom" id="sre-SI-Oi6"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="leading" secondItem="j8d-dU-x8H" secondAttribute="leading" id="y6e-lK-ehe"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-xc-P44">
+                                <rect key="frame" x="283" y="750" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                                <connections>
+                                    <action selector="cropButtonTapped:" destination="JFe-4e-dcs" eventType="touchUpInside" id="sLJ-To-XHc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG3-UY-zEb">
+                                <rect key="frame" x="526" y="750" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissTapped:" destination="JFe-4e-dcs" eventType="touchUpInside" id="pbB-dI-MpA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7hw-xc-P44" firstAttribute="centerX" secondItem="pAQ-r5-hs6" secondAttribute="centerX" id="PTi-vn-aCM"/>
+                            <constraint firstItem="j8d-dU-x8H" firstAttribute="centerY" secondItem="pAQ-r5-hs6" secondAttribute="centerY" id="QLY-1b-1zl"/>
+                            <constraint firstItem="Q47-8w-wGS" firstAttribute="top" secondItem="7hw-xc-P44" secondAttribute="bottom" constant="20" id="UOd-n9-K7e"/>
+                            <constraint firstItem="rG3-UY-zEb" firstAttribute="centerY" secondItem="7hw-xc-P44" secondAttribute="centerY" id="VQO-Jt-qkm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rG3-UY-zEb" secondAttribute="trailing" id="iUP-cF-ZSd"/>
+                            <constraint firstItem="j8d-dU-x8H" firstAttribute="width" secondItem="pAQ-r5-hs6" secondAttribute="width" id="wt9-Zt-cGd"/>
+                            <constraint firstItem="j8d-dU-x8H" firstAttribute="centerX" secondItem="pAQ-r5-hs6" secondAttribute="centerX" id="xHp-JL-Wb3"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="imageView" destination="rgr-10-ztU" id="R5X-Pc-gPy"/>
+                        <outlet property="imageViewEqualHeightConstraint" destination="q80-s0-hhO" id="aUb-jR-Pck"/>
+                        <outlet property="imageViewEqualWidthConstraint" destination="h4v-XV-HIV" id="Pfe-jS-az0"/>
+                        <outlet property="scrollView" destination="j8d-dU-x8H" id="Lys-2M-xdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mly-hU-nSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4024" y="189"/>
         </scene>
         <!--Credit CardVC-->
         <scene sceneID="OTC-Qt-mPv">

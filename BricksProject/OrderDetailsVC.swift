@@ -87,6 +87,13 @@ class OrderDetailsVC: UIViewController {
             guard let creditCardVC = segue.destination as? CreditCardVC else { return }
             creditCardVC.creditCard = order?.creditCard
             break
+        case Storyboard.Segue.orderDetails_imageCrop:
+            guard
+                let imageCrop = segue.destination as? ImageCropVC,
+                let image = sender as? UIImage
+            else { return }
+            imageCrop.image = image
+            break
         default:
             return
         }
@@ -188,6 +195,14 @@ extension OrderDetailsVC: UICollectionViewDataSource {
         addShadow(toView: cell, alpha: 0.6)
         cell.image = order!.images[indexPath.item]
         return cell
+    }
+}
+
+// MARK: - Collection View Delegate
+extension OrderDetailsVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! ImageCell
+        performSegue(withIdentifier: Storyboard.Segue.orderDetails_imageCrop, sender: cell.image)
     }
 }
 
