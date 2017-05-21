@@ -633,20 +633,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8d-dU-x8H">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8d-dU-x8H">
                                 <rect key="frame" x="0.0" y="100" width="600" height="600"/>
                                 <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-10-ztU">
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-10-ztU">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="rgr-10-ztU" secondAttribute="trailing" id="FcP-7e-raG"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="width" secondItem="j8d-dU-x8H" secondAttribute="width" id="h4v-XV-HIV"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="height" secondItem="j8d-dU-x8H" secondAttribute="height" id="q80-s0-hhO"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="centerX" secondItem="j8d-dU-x8H" secondAttribute="centerX" id="Nk2-R4-ZLW"/>
                                     <constraint firstItem="rgr-10-ztU" firstAttribute="top" secondItem="j8d-dU-x8H" secondAttribute="top" id="qp5-Md-F4r"/>
                                     <constraint firstAttribute="width" secondItem="j8d-dU-x8H" secondAttribute="height" multiplier="1:1" id="r8B-nv-BBd"/>
                                     <constraint firstAttribute="bottom" secondItem="rgr-10-ztU" secondAttribute="bottom" id="sre-SI-Oi6"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="centerY" secondItem="j8d-dU-x8H" secondAttribute="centerY" id="tdL-fF-Puo"/>
                                     <constraint firstItem="rgr-10-ztU" firstAttribute="leading" secondItem="j8d-dU-x8H" secondAttribute="leading" id="y6e-lK-ehe"/>
                                 </constraints>
                             </scrollView>
@@ -680,8 +680,6 @@
                     <size key="freeformSize" width="600" height="800"/>
                     <connections>
                         <outlet property="imageView" destination="rgr-10-ztU" id="R5X-Pc-gPy"/>
-                        <outlet property="imageViewEqualHeightConstraint" destination="q80-s0-hhO" id="aUb-jR-Pck"/>
-                        <outlet property="imageViewEqualWidthConstraint" destination="h4v-XV-HIV" id="Pfe-jS-az0"/>
                         <outlet property="scrollView" destination="j8d-dU-x8H" id="Lys-2M-xdn"/>
                     </connections>
                 </viewController>
