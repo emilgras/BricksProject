@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		F21443F41EC779FA00154226 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21443F21EC779FA00154226 /* ImageCell.swift */; };
 		F21443F51EC779FA00154226 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21443F31EC779FA00154226 /* ImageCell.xib */; };
+		F24CE4251ED31DC400B79128 /* PaymentViewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CE4241ED31DC400B79128 /* PaymentViewTextField.swift */; };
 		F25BE1711ECB5C2D00CACEF5 /* ViewBricksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BE1701ECB5C2D00CACEF5 /* ViewBricksVC.swift */; };
 		F264CFB41EC85F6800D37F57 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB31EC85F6800D37F57 /* AddressVC.swift */; };
 		F264CFB61EC85F7600D37F57 /* CreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */; };
 		F264CFB91EC894C700D37F57 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264CFB81EC894C700D37F57 /* Order.swift */; };
 		F267558B1ED1F5BF00607583 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267558A1ED1F5BF00607583 /* PaymentView.swift */; };
-		F267558D1ED1FBFD00607583 /* PaymentViewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267558C1ED1FBFD00607583 /* PaymentViewTextField.swift */; };
 		F267558F1ED2032700607583 /* PaymentViewCardNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267558E1ED2032700607583 /* PaymentViewCardNumberField.swift */; };
 		F27008D61EC7169A00C5FC49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27008D51EC7169A00C5FC49 /* Constants.swift */; };
 		F27008D91EC71ACC00C5FC49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27008D81EC71ACC00C5FC49 /* Extensions.swift */; };
@@ -32,12 +32,12 @@
 /* Begin PBXFileReference section */
 		F21443F21EC779FA00154226 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		F21443F31EC779FA00154226 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		F24CE4241ED31DC400B79128 /* PaymentViewTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewTextField.swift; sourceTree = "<group>"; };
 		F25BE1701ECB5C2D00CACEF5 /* ViewBricksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBricksVC.swift; sourceTree = "<group>"; };
 		F264CFB31EC85F6800D37F57 /* AddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		F264CFB51EC85F7600D37F57 /* CreditCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardVC.swift; sourceTree = "<group>"; };
 		F264CFB81EC894C700D37F57 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F267558A1ED1F5BF00607583 /* PaymentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
-		F267558C1ED1FBFD00607583 /* PaymentViewTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewTextField.swift; sourceTree = "<group>"; };
 		F267558E1ED2032700607583 /* PaymentViewCardNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewCardNumberField.swift; sourceTree = "<group>"; };
 		F27008D51EC7169A00C5FC49 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F27008D81EC71ACC00C5FC49 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 				F21443F21EC779FA00154226 /* ImageCell.swift */,
 				F267558A1ED1F5BF00607583 /* PaymentView.swift */,
 				F267558E1ED2032700607583 /* PaymentViewCardNumberField.swift */,
-				F267558C1ED1FBFD00607583 /* PaymentViewTextField.swift */,
+				F24CE4241ED31DC400B79128 /* PaymentViewTextField.swift */,
 				F21443F31EC779FA00154226 /* ImageCell.xib */,
 			);
 			name = Views;
@@ -242,11 +242,11 @@
 				F2C351E91EC67CF90062E855 /* CameraRollVC.swift in Sources */,
 				F27008D91EC71ACC00C5FC49 /* Extensions.swift in Sources */,
 				F2C351CD1EC676AB0062E855 /* AppDelegate.swift in Sources */,
-				F267558D1ED1FBFD00607583 /* PaymentViewTextField.swift in Sources */,
 				F267558B1ED1F5BF00607583 /* PaymentView.swift in Sources */,
 				F25BE1711ECB5C2D00CACEF5 /* ViewBricksVC.swift in Sources */,
 				F267558F1ED2032700607583 /* PaymentViewCardNumberField.swift in Sources */,
 				F264CFB61EC85F7600D37F57 /* CreditCardVC.swift in Sources */,
+				F24CE4251ED31DC400B79128 /* PaymentViewTextField.swift in Sources */,
 				F2A0DD261EC79BCC009974D8 /* OrderDetailsVC.swift in Sources */,
 				F2A0DD221EC798A1009974D8 /* CustomPushUpTransition.swift in Sources */,
 				F264CFB91EC894C700D37F57 /* Order.swift in Sources */,
