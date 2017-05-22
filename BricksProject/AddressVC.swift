@@ -43,6 +43,7 @@ class AddressVC: UIViewController {
     }
     
     @IBAction func dismissTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clearButtonTapped(_ sender: Any) {

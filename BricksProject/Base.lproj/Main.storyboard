@@ -641,32 +641,36 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="rgr-10-ztU" secondAttribute="trailing" id="FcP-7e-raG"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="centerX" secondItem="j8d-dU-x8H" secondAttribute="centerX" id="Nk2-R4-ZLW"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="top" secondItem="j8d-dU-x8H" secondAttribute="top" id="qp5-Md-F4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="rgr-10-ztU" secondAttribute="trailing" id="3f6-9J-Q7O"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="leading" secondItem="j8d-dU-x8H" secondAttribute="leading" id="5tw-cV-TtW"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="top" secondItem="j8d-dU-x8H" secondAttribute="top" id="9k5-ie-v1B"/>
+                                    <constraint firstAttribute="bottom" secondItem="rgr-10-ztU" secondAttribute="bottom" id="cbf-mS-uEl"/>
+                                    <constraint firstItem="rgr-10-ztU" firstAttribute="height" secondItem="j8d-dU-x8H" secondAttribute="height" id="oUH-QG-jVO"/>
                                     <constraint firstAttribute="width" secondItem="j8d-dU-x8H" secondAttribute="height" multiplier="1:1" id="r8B-nv-BBd"/>
-                                    <constraint firstAttribute="bottom" secondItem="rgr-10-ztU" secondAttribute="bottom" id="sre-SI-Oi6"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="centerY" secondItem="j8d-dU-x8H" secondAttribute="centerY" id="tdL-fF-Puo"/>
-                                    <constraint firstItem="rgr-10-ztU" firstAttribute="leading" secondItem="j8d-dU-x8H" secondAttribute="leading" id="y6e-lK-ehe"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-xc-P44">
                                 <rect key="frame" x="283" y="750" width="34" height="30"/>
-                                <state key="normal" title="Crop"/>
+                                <state key="normal" title="Crop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="cropButtonTapped:" destination="JFe-4e-dcs" eventType="touchUpInside" id="sLJ-To-XHc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG3-UY-zEb">
                                 <rect key="frame" x="526" y="750" width="54" height="30"/>
-                                <state key="normal" title="Dismiss"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="dismissTapped:" destination="JFe-4e-dcs" eventType="touchUpInside" id="pbB-dI-MpA"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rgr-10-ztU" firstAttribute="width" secondItem="pAQ-r5-hs6" secondAttribute="width" id="P7v-cg-g75"/>
                             <constraint firstItem="7hw-xc-P44" firstAttribute="centerX" secondItem="pAQ-r5-hs6" secondAttribute="centerX" id="PTi-vn-aCM"/>
                             <constraint firstItem="j8d-dU-x8H" firstAttribute="centerY" secondItem="pAQ-r5-hs6" secondAttribute="centerY" id="QLY-1b-1zl"/>
                             <constraint firstItem="Q47-8w-wGS" firstAttribute="top" secondItem="7hw-xc-P44" secondAttribute="bottom" constant="20" id="UOd-n9-K7e"/>
